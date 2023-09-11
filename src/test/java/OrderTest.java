@@ -1,12 +1,10 @@
-import by.terrapizza.taf.HomePage;
+import by.terrapizza.taf.po.HomePage;
 import by.terrapizza.taf.po.BarPage;
 import by.terrapizza.taf.po.CartPage;
 import by.terrapizza.taf.po.MenuPage;
 import by.terrapizza.taf.po.PizzaPage;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
-
-import java.time.Duration;
 
 public class OrderTest extends BaseTest {
     @DisplayName("Testing of making order")
