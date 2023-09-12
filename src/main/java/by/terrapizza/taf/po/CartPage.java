@@ -25,7 +25,7 @@ public class CartPage {
         String drinkInCartText = driver.findElement(By.xpath(iceLateInCart)).getText();
         boolean isItemsInCart = (pizzaInCartText.contains("Маргарита") | pizzaInCartText.contains("Кватроформаджио"))
                 && drinkInCartText.contains("Айс Латте");
-          if (isItemsInCart) {
+         if (isItemsInCart) {
             System.out.println("The content of the order corresponds to the expectation");
         } else {
             System.out.println("The content of the order does not meet the expectation");

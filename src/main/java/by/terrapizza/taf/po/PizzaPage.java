@@ -3,6 +3,8 @@ package by.terrapizza.taf.po;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+
+import java.time.Duration;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -26,7 +28,7 @@ public class PizzaPage extends HomePage {
         List<WebElement> pizzaElements = new ArrayList<>();
         pizzaElements.add(0, addMargaritaToCartElement);
         pizzaElements.add(1, add4CheesesToCartElement);
-        Thread.sleep(5);
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
         pizzaElements.get(pizzaIndex).click();
     }
 }
