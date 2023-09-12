@@ -6,9 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="dfadc19c-754a-4005-92d8-0da24e6c0024" name="Changes" comment="some changes in architecture">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/by/terrapizza/taf/po/CartPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/terrapizza/taf/po/CartPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/by/terrapizza/taf/po/BarPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/terrapizza/taf/po/BarPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/by/terrapizza/taf/po/PizzaPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/terrapizza/taf/po/PizzaPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/OrderTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/OrderTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,7 +48,7 @@
     &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;
   }
 }</component>
-  <component name="RunManager" selected="JUnit.OrderTest.makingOrderPizzaAndDrink">
+  <component name="RunManager" selected="JUnit.OrderTest">
     <configuration name="OrderTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="taf-java" />
       <option name="PACKAGE_NAME" value="" />
@@ -71,8 +70,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.OrderTest.makingOrderPizzaAndDrink" />
         <item itemvalue="JUnit.OrderTest" />
+        <item itemvalue="JUnit.OrderTest.makingOrderPizzaAndDrink" />
       </list>
     </recent_temporary>
   </component>
@@ -106,7 +105,14 @@
       <option name="project" value="LOCAL" />
       <updated>1694503617607</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="some changes in architecture">
+      <created>1694504278061</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1694504278061</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -119,7 +125,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/OrderTest.java</url>
-          <line>17</line>
+          <line>18</line>
           <option name="timeStamp" value="10" />
         </line-breakpoint>
       </breakpoints>

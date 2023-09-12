@@ -3,10 +3,9 @@ package by.terrapizza.taf.po;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-
-import java.time.Duration;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.concurrent.TimeUnit;
 
 public class PizzaPage extends HomePage {
     private String addMargaritaToCartButton = "//button [@data-id='364'][@class='menu-card__footer-btn add-basket-btn']";
@@ -22,13 +21,13 @@ public class PizzaPage extends HomePage {
         super.clickMenuButton();
     }
 
-    public void addPizzaToCart(int pizzaIndex) throws InterruptedException {
+    public void addPizzaToCart(int pizzaIndex) {
         WebElement addMargaritaToCartElement = driver.findElement(By.xpath(addMargaritaToCartButton));
         WebElement add4CheesesToCartElement = driver.findElement(By.xpath(add4CheesesToCartButton));
         List<WebElement> pizzaElements = new ArrayList<>();
         pizzaElements.add(0, addMargaritaToCartElement);
         pizzaElements.add(1, add4CheesesToCartElement);
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         pizzaElements.get(pizzaIndex).click();
     }
 }
