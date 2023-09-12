@@ -14,12 +14,12 @@ public class MenuPage {
     public MenuPage(WebDriver driver) {
         this.driver = driver;
     }
-    public void openPizzaMenu() throws InterruptedException {
+    public void openPizzaPage() throws InterruptedException {
         WebElement pizzaElement = driver.findElement(By.xpath(pizzaButton));
         Thread.sleep(15);
         pizzaElement.click();
     }
-    public void  openBarMenu() throws InterruptedException {
+    public void  openBarPage() {
         WebElement barElement = driver.findElement(By.xpath(barButton));
         driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
         barElement.click();

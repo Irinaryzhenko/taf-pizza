@@ -2,11 +2,10 @@ package by.terrapizza.taf.po;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+import java.time.Duration;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-import java.util.concurrent.TimeUnit;
 
 public class CartPage {
     WebDriver driver;
@@ -17,18 +16,19 @@ public class CartPage {
         this.driver = driver;
     }
 
-    public void checkItemsInCart() throws InterruptedException {
-        driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+    public void checkItemsInCart() {
+        new WebDriverWait(driver, Duration.ofSeconds(20)).until(ExpectedConditions
+                .presenceOfElementLocated(By.xpath(pizzaInCart)));
         String pizzaInCartText = driver.findElement(By.xpath(pizzaInCart)).getText();
+        new WebDriverWait(driver, Duration.ofSeconds(20)).until(ExpectedConditions
+                .presenceOfElementLocated(By.xpath(iceLateInCart)));
         String drinkInCartText = driver.findElement(By.xpath(iceLateInCart)).getText();
-        driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
-        boolean isPizzaInCart = pizzaInCartText.contains("Маргарита") | pizzaInCartText.contains("Кватроформаджио");
-        boolean isIceLateInCart = drinkInCartText.contains("Айс Латте");
-        Thread.sleep(30);
-        if (isPizzaInCart && isIceLateInCart) {
-            System.out.println("Условия соответствуют");
+        boolean isItemsInCart = (pizzaInCartText.contains("Маргарита") | pizzaInCartText.contains("Кватроформаджио"))
+                && drinkInCartText.contains("Айс Латте");
+          if (isItemsInCart) {
+            System.out.println("The content of the order corresponds to the expectation");
         } else {
-            System.out.println("Условия не соответствуют");
+            System.out.println("The content of the order does not meet the expectation");
         }
     }
 }

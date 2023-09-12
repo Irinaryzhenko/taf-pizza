@@ -6,6 +6,7 @@ import by.terrapizza.taf.po.PizzaPage;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
+
 public class OrderTest extends BaseTest {
     @DisplayName("Testing of making order")
     @Test
@@ -14,16 +15,15 @@ public class OrderTest extends BaseTest {
         homePage.clickMenuButton();
         MenuPage menuPage = new MenuPage(driver);
         menuPage.closeCookiesWindow();
-        menuPage.openPizzaMenu();
+        menuPage.openPizzaPage();
         PizzaPage pizzaPage = new PizzaPage(driver);
-        pizzaPage.addPizzaToCart(0);
+        pizzaPage.addPizzaToCart(1);
         pizzaPage.clickMenuButton();
-        menuPage.openBarMenu();
+        menuPage.openBarPage();
         BarPage barPage = new BarPage(driver);
         barPage.addToCartIceLate();
         barPage.openCart();
         CartPage cartPage = new CartPage(driver);
-        Thread.sleep(20);
         cartPage.checkItemsInCart();
     }
 }
