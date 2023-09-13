@@ -28,7 +28,7 @@ public class CartPage {
          if (isItemsInCart) {
             System.out.println("The content of the order corresponds to the expectation");
         } else {
-            System.out.println("The content of the order does not meet the expectation");
+            System.out.println("The content of the order does not math the expectation");
         }
     }
 }
