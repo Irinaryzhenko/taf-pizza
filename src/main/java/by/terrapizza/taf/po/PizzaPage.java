@@ -1,7 +1,6 @@
 package by.terrapizza.taf.po;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import java.util.ArrayList;
 import java.util.List;
@@ -12,8 +11,8 @@ public class PizzaPage extends HomePage {
     private String add4CheesesToCartButton = "//button[@data-id='650']";
     private String cartButton = "//div[@class = 'basket__btn-top basket__top basket__btn-top--sm' ]";
 
-    public PizzaPage(WebDriver driver) {
-        super(driver);
+    public PizzaPage() {
+        super();
     }
 
     @Override

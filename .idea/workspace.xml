@@ -5,7 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dfadc19c-754a-4005-92d8-0da24e6c0024" name="Changes" comment="some changes in architecture">
+      <change afterPath="$PROJECT_DIR$/src/main/java/by/terrapizza/taf/po/util/Singleton.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/by/terrapizza/taf/po/BarPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/terrapizza/taf/po/BarPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/by/terrapizza/taf/po/CartPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/terrapizza/taf/po/CartPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/by/terrapizza/taf/po/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/terrapizza/taf/po/HomePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/by/terrapizza/taf/po/MenuPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/terrapizza/taf/po/MenuPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/by/terrapizza/taf/po/PizzaPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/terrapizza/taf/po/PizzaPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/BaseTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/OrderTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/OrderTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -118,23 +125,19 @@
       <option name="project" value="LOCAL" />
       <updated>1694505149467</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="some changes in architecture">
+      <created>1694621893605</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1694621893605</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="new TAF" />
     <MESSAGE value="some changes in architecture" />
     <option name="LAST_COMMIT_MESSAGE" value="some changes in architecture" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/OrderTest.java</url>
-          <line>18</line>
-          <option name="timeStamp" value="10" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>
